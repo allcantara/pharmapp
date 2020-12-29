@@ -1,0 +1,49 @@
+{
+  "name": "@pharmapp/backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "tsnd --transpile-only --respawn --ignore-watch node_modules src/server.ts",
+    "migrate": "sequelize db:migrate",
+    "undo": "sequelize db:migrate:undo",
+    "undo-all": "sequelize db:migrate:undo:all"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jwt-then": "^1.0.1",
+    "mysql2": "^2.2.5",
+    "nodemailer": "^6.4.17",
+    "reflect-metadata": "^0.1.13",
+    "sequelize": "^6.3.5",
+    "sequelize-typescript": "^1.1.0",
+    "uuidv4": "^6.2.6",
+    "venom-bot": "^2.2.2"
+  },
+  "devDependencies": {
+    "@types/bluebird": "^3.5.33",
+    "@types/cors": "^2.8.9",
+    "@types/express": "^4.17.9",
+    "@types/jwt-then": "^1.0.0",
+    "@types/node": "14.14.16",
+    "@types/nodemailer": "^6.4.0",
+    "@types/sequelize": "^4.28.9",
+    "@types/validator": "^13.1.2",
+    "@typescript-eslint/eslint-plugin": "^4.11.1",
+    "@typescript-eslint/parser": "^4.11.1",
+    "eslint": "^7.16.0",
+    "eslint-config-prettier": "^7.1.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^5.0.0",
+    "prettier": "^2.2.1",
+    "sequelize-cli": "^6.2.0",
+    "ts-node-dev": "^1.1.1",
+    "typescript": "^4.1.3"
+  }
+}
